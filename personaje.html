@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Información del personaje</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pagina-personaje">
+  <main class="ficha" id="ficha-personaje">
+    <a class="regresar" href="index.html">← Regresar al mapa</a>
+
+    <p class="etiqueta">Ficha de personaje</p>
+    <h1 id="detalle-nombre">Personaje</h1>
+    <p id="detalle-frase" class="frase"></p>
+
+    <dl class="datos-personaje">
+      <div>
+        <dt>País</dt>
+        <dd id="detalle-pais">Sin información</dd>
+      </div>
+      <div>
+        <dt>Estilo</dt>
+        <dd id="detalle-estilo">Sin información</dd>
+      </div>
+    </dl>
+
+    <p id="detalle-descripcion" class="descripcion"></p>
+  </main>
+
+  <script src="datos.js"></script>
+  <script src="personaje.js"></script>
+</body>
+</html>

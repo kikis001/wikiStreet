@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa de personajes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Mapa de personajes</h1>
+
+  <button id="boton-coordenadas" type="button">Mostrar coordenadas</button>
+
+  <p>Haz clic en un personaje marcado para ver su información.</p>
+
+  <div class="lienzo imagen-principal">
+    <img id="imagen-principal" src="assets/street-fighter.png" alt="Personajes de Street Fighter">
+    <div id="zonas-principales" class="capa-zonas"></div>
+  </div>
+
+  <section id="editor" class="oculto">
+    <h2>Coordenadas</h2>
+
+    <div class="area-editor">
+      <div id="lienzo-editor" class="lienzo imagen-editor">
+        <img id="imagen-editor" src="assets/street-fighter.png" alt="Imagen para sacar coordenadas" draggable="false">
+        <div id="zonas-editor" class="capa-zonas"></div>
+        <div id="rectangulo-temporal" class="rectangulo oculto"></div>
+      </div>
+
+      <div class="formulario-coordenadas">
+        <p id="mensaje">Selecciona un personaje y arrastra un rectángulo sobre la imagen.</p>
+
+        <!--
+        <p>
+          <label for="selector-imagen">Subir otra imagen:</label><br>
+          <input id="selector-imagen" type="file" accept="image/*">
+        </p>
+        -->
+
+        <p>
+          <label for="selector-personaje">Personaje:</label><br>
+          <select id="selector-personaje"></select>
+        </p>
+
+        <form id="formulario-personaje">
+          <label for="nombre-personaje">Agregar personaje:</label><br>
+          <input id="nombre-personaje" type="text" required>
+          <button type="submit">Agregar</button>
+        </form>
+
+        <p>
+          <button id="borrar-coordenada" type="button">Borrar coordenada seleccionada</button>
+        </p>
+
+        <p>
+          <button id="limpiar-coordenadas" type="button">Limpiar coordenadas</button>
+        </p>
+
+        <h3>Coordenadas en JSON</h3>
+        <textarea id="salida-json" rows="15" readonly></textarea>
+
+        <p>
+          <button id="copiar-json" type="button">Copiar JSON</button>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script src="datos.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

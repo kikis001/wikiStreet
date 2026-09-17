@@ -1,0 +1,82 @@
+/* Estilos básicos y los necesarios para colocar los rectángulos. */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.lienzo {
+  position: relative;
+  max-width: 100%;
+  touch-action: none;
+}
+
+.lienzo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.imagen-principal {
+  width: 900px;
+}
+
+.area-editor {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.imagen-editor {
+  width: 65%;
+}
+
+.formulario-coordenadas {
+  width: 35%;
+}
+
+.capa-zonas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.imagen-principal .capa-zonas {
+  pointer-events: auto;
+}
+
+.rectangulo {
+  position: absolute;
+  padding: 0;
+  border: 2px solid red;
+  background: transparent;
+}
+
+.imagen-principal .rectangulo:hover {
+  border-color: #f40009;
+  background-color: rgba(244, 0, 9, 0.35);
+}
+
+.rectangulo span {
+  color: black;
+  background: white;
+  font-size: 12px;
+}
+
+.oculto {
+  display: none;
+}
+
+textarea {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .area-editor {
+    display: block;
+  }
+
+  .imagen-editor,
+  .formulario-coordenadas {
+    width: 100%;
+  }
+}
