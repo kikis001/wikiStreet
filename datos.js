@@ -1,5 +1,6 @@
 // Este arreglo contiene la información que se muestra en personaje.html.
 // "coordenadas" usa píxeles de la imagen original: x, y, ancho y alto.
+// Para el carrusel puedes agregar: imagenes: ["ruta-1", "ruta-2", "ruta-3"].
 const PERSONAJES_INICIALES = [
   {
     nombre: "Blanka",
@@ -7,7 +8,12 @@ const PERSONAJES_INICIALES = [
     estilo: "Ataques eléctricos",
     frase: "La fuerza de la selva.",
     descripcion: "Blanka es un luchador ágil que combina movimientos salvajes con electricidad.",
-    coordenadas: { x: 124, y: 169, ancho: 174, alto: 395 }
+    imagenes: [
+      "assets/personajes/blanka/blanka1.png",
+      "assets/personajes/blanka/blanka2.png",
+      "assets/personajes/blanka/blanka3.png",
+    ],
+    coordenadas: { x: 350, y: 336, ancho: 172, alto: 185 }
   },
   {
     nombre: "Zangief",
@@ -15,7 +21,12 @@ const PERSONAJES_INICIALES = [
     estilo: "Lucha libre",
     frase: "El ciclón rojo.",
     descripcion: "Zangief basa su combate en la fuerza, los agarres y los lanzamientos.",
-    coordenadas: { x: 0, y: 247, ancho: 118, alto: 266 }
+    imagenes: [
+      "assets/personajes/zangief/zangief1.png",
+      "assets/personajes/zangief/zangief2.png",
+      "assets/personajes/zangief/zangief3.png",
+    ],
+    coordenadas: { x: 85, y: 204, ancho: 126, alto: 111 }
   },
   {
     nombre: "Ryu",
@@ -23,7 +34,12 @@ const PERSONAJES_INICIALES = [
     estilo: "Artes marciales",
     frase: "Siempre en busca de un nuevo reto.",
     descripcion: "Ryu es un peleador disciplinado que viaja para mejorar su técnica.",
-    coordenadas: { x: 537, y: 184, ancho: 96, alto: 378 }
+    imagenes: [
+      "assets/personajes/ryu/ryu1.png",
+      "assets/personajes/ryu/ryu2.png",
+      "assets/personajes/ryu/ryu3.png",
+    ],
+    coordenadas: { x: 228, y: 444, ancho: 237, alto: 254 }
   },
   {
     nombre: "Chun-Li",
@@ -31,7 +47,12 @@ const PERSONAJES_INICIALES = [
     estilo: "Kung-fu",
     frase: "Velocidad y justicia.",
     descripcion: "Chun-Li destaca por su rapidez y sus poderosas técnicas de patadas.",
-    coordenadas: { x: 308, y: 267, ancho: 89, alto: 293 }
+    imagenes: [
+      "assets/personajes/chun-li/chun-li1.png",
+      "assets/personajes/chun-li/chun-li2.png",
+      "assets/personajes/chun-li/chun-li3.png",
+    ],
+    coordenadas: { x: 220, y: 193, ancho: 129, alto: 248 }
   },
   {
     nombre: "Ken",
@@ -39,7 +60,12 @@ const PERSONAJES_INICIALES = [
     estilo: "Artes marciales",
     frase: "Combate con energía y confianza.",
     descripcion: "Ken es un luchador veloz y ofensivo, además de amigo y rival de Ryu.",
-    coordenadas: { x: 406, y: 222, ancho: 113, alto: 341 }
+    imagenes: [
+      "assets/personajes/ken/ken1.png",
+      "assets/personajes/ken/ken2.png",
+      "assets/personajes/ken/ken3.png",
+    ],
+    coordenadas: { x: 21, y: 321, ancho: 184, alto: 131 }
   },
   {
     nombre: "Cammy",
@@ -55,7 +81,12 @@ const PERSONAJES_INICIALES = [
     estilo: "Muay Thai",
     frase: "El emperador del Muay Thai.",
     descripcion: "Sagat es un peleador alto y poderoso especializado en Muay Thai.",
-    coordenadas: { x: 681, y: 7, ancho: 103, alto: 264 }
+    imagenes: [
+      "assets/personajes/sagat/sagat1.png",
+      "assets/personajes/sagat/sagat2.png",
+      "assets/personajes/sagat/sagat3.png",
+    ],
+    coordenadas: { x: 349, y: 48, ancho: 114, alto: 152 }
   },
   {
     nombre: "M. Bison",
@@ -63,7 +94,12 @@ const PERSONAJES_INICIALES = [
     estilo: "Psycho Power",
     frase: "El líder de Shadaloo.",
     descripcion: "M. Bison utiliza una energía conocida como Psycho Power.",
-    coordenadas: { x: 956, y: 265, ancho: 122, alto: 269 }
+    imagenes: [
+      "assets/personajes/m-bison/mbison1.png",
+      "assets/personajes/m-bison/mbison2.png",
+      "assets/personajes/m-bison/mbison3.png",
+    ],
+    coordenadas: { x: 189, y: 16, ancho: 160, alto: 134 }
   },
   {
     nombre: "Vega",
@@ -71,7 +107,12 @@ const PERSONAJES_INICIALES = [
     estilo: "Ninjutsu español",
     frase: "Velocidad y agilidad.",
     descripcion: "Vega pelea con gran velocidad y utiliza una garra metálica.",
-    coordenadas: { x: 813, y: 246, ancho: 136, alto: 188 }
+    imagenes: [
+      "assets/personajes/vega/vega1.png",
+      "assets/personajes/vega/vega2.png",
+      "assets/personajes/vega/vega3.png",
+    ],
+    coordenadas: { x: 49, y: 35, ancho: 200, alto: 146 }
   },
   {
     nombre: "Dhalsim",
@@ -79,7 +120,12 @@ const PERSONAJES_INICIALES = [
     estilo: "Yoga",
     frase: "Mente y cuerpo en equilibrio.",
     descripcion: "Dhalsim utiliza técnicas de yoga y ataques de largo alcance.",
-    coordenadas: { x: 255, y: 30, ancho: 160, alto: 222 }
+    imagenes: [
+      "assets/personajes/dhalsim/dhalsim1.png",
+      "assets/personajes/dhalsim/dhalsim2.png",
+      "assets/personajes/dhalsim/dhalsim3.png",
+    ],
+    coordenadas: { x: 9, y: 151, ancho: 125, alto: 133 }
   },
   {
     nombre: "Barlog",
@@ -87,7 +133,12 @@ const PERSONAJES_INICIALES = [
     estilo: "Boxeo",
     frase: "Fuerza en cada golpe.",
     descripcion: "Barlog es un boxeador que basa su combate en golpes fuertes y directos.",
-    coordenadas: { x: 25, y: 392, ancho: 173, alto: 255 }
+    imagenes: [
+      "assets/personajes/barlog/barlog1.png",
+      "assets/personajes/barlog/barlog2.png",
+      "assets/personajes/barlog/barlog3.png",
+    ],
+    coordenadas: { x: 313, y: 233, ancho: 204, alto: 81 }
   },
   {
     nombre: "Guile",
@@ -95,7 +146,12 @@ const PERSONAJES_INICIALES = [
     estilo: "Combate militar",
     frase: "Disciplina y estrategia.",
     descripcion: "Guile utiliza técnicas militares y ataques como el Sonic Boom.",
-    coordenadas: { x: 830, y: 448, ancho: 216, alto: 191 }
+    imagenes: [
+      "assets/personajes/guile/guile1.png",
+      "assets/personajes/guile/guile2.png",
+      "assets/personajes/guile/guile3.png",
+    ],
+    coordenadas: { x: 32, y: 396, ancho: 212, alto: 234 }
   },
   {
     nombre: "E. Honda",
@@ -103,6 +159,11 @@ const PERSONAJES_INICIALES = [
     estilo: "Sumo",
     frase: "El orgullo del sumo.",
     descripcion: "E. Honda utiliza movimientos de sumo y rápidos golpes con las manos.",
-    coordenadas: { x: 641, y: 210, ancho: 180, alto: 349 }
+    imagenes: [
+      "assets/personajes/e-honda/e-honda1.png",
+      "assets/personajes/e-honda/e-honda2.png",
+      "assets/personajes/e-honda/e-honda3.png",
+    ],
+    coordenadas: { x: 323, y: 143, ancho: 107, alto: 90 }
   }
 ];

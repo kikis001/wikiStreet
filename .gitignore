@@ -1,0 +1,13 @@
+node_modules/
+
+# Archivos auxiliares creados por herramientas
+.agents/
+.pptx-build/
+.docx-build/
+.docx-render*/
+
+# Documentos generados que no forman parte de la página web
+output/
+*.pptx
+*.docx
+*.pdf

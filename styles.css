@@ -1,7 +1,18 @@
-/* Estilos básicos y los necesarios para colocar los rectángulos. */
+:root {
+  --sf-red: #dc1f26;
+  --sf-dark: #151515;
+}
 
 body {
-  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.navbar-brand {
+  letter-spacing: 0.04em;
+}
+
+.mapa-card {
+  background: linear-gradient(145deg, #111, #292929);
 }
 
 .lienzo {
@@ -14,24 +25,18 @@ body {
   display: block;
   width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 .imagen-principal {
-  width: 900px;
-}
-
-.area-editor {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
+  width: min(100%, 1100px);
 }
 
 .imagen-editor {
-  width: 65%;
-}
-
-.formulario-coordenadas {
-  width: 35%;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #dee2e6;
+  background-color: #111;
 }
 
 .capa-zonas {
@@ -47,36 +52,116 @@ body {
 .rectangulo {
   position: absolute;
   padding: 0;
-  border: 2px solid red;
+  border: 2px solid rgba(220, 31, 38, 0.8);
   background: transparent;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
 .imagen-principal .rectangulo:hover {
+  z-index: 2;
   border-color: #f40009;
   background-color: rgba(244, 0, 9, 0.35);
 }
 
 .rectangulo span {
-  color: black;
-  background: white;
-  font-size: 12px;
+  position: absolute;
+  left: -2px;
+  bottom: 100%;
+  padding: 0.15rem 0.35rem;
+  color: #fff;
+  background: var(--sf-red);
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .oculto {
-  display: none;
+  display: none !important;
 }
 
-textarea {
+#salida-json {
+  min-height: 270px;
+  font-size: 0.78rem;
+}
+
+.ficha-personaje {
+  width: min(100%, 1100px);
+  height: 560px;
+}
+
+.ficha-personaje > .row,
+#carrusel-personaje,
+#carrusel-personaje .carousel-inner,
+#carrusel-personaje .carousel-item {
+  height: 100%;
+}
+
+.carrusel-contenido,
+.carousel-placeholder {
   width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (max-width: 700px) {
-  .area-editor {
-    display: block;
+.carrusel-contenido {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+.carousel-placeholder {
+  padding: 3rem;
+}
+
+.carrusel-contenido img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.carousel-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #202020;
+  text-align: center;
+}
+
+.carousel-placeholder span {
+  max-width: 300px;
+  padding: 2rem;
+  border: 1px dashed rgba(255, 255, 255, 0.45);
+}
+
+@media (max-width: 991.98px) {
+  .ficha-personaje {
+    height: auto;
   }
 
-  .imagen-editor,
-  .formulario-coordenadas {
-    width: 100%;
+  #carrusel-personaje,
+  #carrusel-personaje .carousel-inner,
+  #carrusel-personaje .carousel-item {
+    height: 380px;
+  }
+
+  .carrusel-contenido,
+  .carousel-placeholder {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #carrusel-personaje,
+  #carrusel-personaje .carousel-inner,
+  #carrusel-personaje .carousel-item {
+    height: 300px;
+  }
+
+  .rectangulo span {
+    font-size: 0.6rem;
   }
 }
